@@ -1,0 +1,694 @@
+
+
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <title>AI算法手册</title>
+      </head>
+      <body>
+      <h2>数学基础</h2>
+<ul>
+<li><a href="数学基础/chapters/1_algebra.html" target="_blank">1.线性代数基础</a>
+	<ul>
+		<li>一、基本知识</li>
+		<li>二、向量操作</li>
+		<li>三、矩阵运算</li>
+		<li>四、特殊函数</li>
+	</ul>
+</li>
+<li><a href="数学基础/chapters/2_probability.html" target="_blank">2.概率论基础</a>
+	<ul>
+		<li>一、概率与分布</li>
+		<li>二、期望和方差</li>
+		<li>三、大数定律及中心极限定理</li>
+		<li>五、常见概率分布</li>
+		<li>六、先验分布与后验分布</li>
+		<li>七、信息论</li>
+		<li>八、其它</li>
+	</ul>
+</li>
+<li><a href="数学基础/chapters/3_numerical_computaion.html" target="_blank">3.数值计算基础</a>
+	<ul>
+		<li>一、数值稳定性</li>
+		<li>二、梯度下降法</li>
+		<li>三、二阶导数与海森矩阵</li>
+		<li>四、牛顿法</li>
+		<li>五、拟牛顿法</li>
+		<li>六、 约束优化</li>
+	</ul>
+</li>
+<li><a href="数学基础/chapters/4_monte_carlo.html" target="_blank">4.蒙特卡洛方法与 MCMC 采样</a>
+	<ul>
+		<li>一、蒙特卡洛方法</li>
+		<li>二、马尔可夫链</li>
+		<li>三、MCMC 采样</li>
+	</ul>
+</li>
+</ul>
+<h2>统计学习</h2>
+<ul>
+<li><a href="统计学习/chapters/0_introduction.html" target="_blank">0.机器学习简介</a>
+	<ul>
+		<li>一、基本概念</li>
+		<li>二、监督学习</li>
+		<li>三、机器学习三要素</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/1_linear.html" target="_blank">1.线性代数基础</a>
+	<ul>
+		<li>一、线性回归</li>
+		<li>二、广义线性模型</li>
+		<li>三、对数几率回归</li>
+		<li>四、线性判别分析</li>
+		<li>五、感知机</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/2_svm.html" target="_blank">2.支持向量机</a>
+	<ul>
+		<li>一、 线性可分支持向量机</li>
+		<li>二、线性支持向量机</li>
+		<li>三、非线性支持向量机</li>
+		<li>四、支持向量回归</li>
+		<li>五、SVDD</li>
+		<li>六、序列最小最优化方法</li>
+		<li>七、其它讨论</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/3_bayesian.html" target="_blank">3.朴素贝叶斯</a>
+	<ul>
+		<li>一、贝叶斯定理</li>
+		<li>二、朴素贝叶斯法</li>
+		<li>三、半朴素贝叶斯分类器</li>
+		<li>四、其它讨论</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/4_decision_tree.html" target="_blank">4.决策树</a>
+	<ul>
+		<li>一、 原理</li>
+		<li>二、 特征选择</li>
+		<li>三、生成算法</li>
+		<li>四、剪枝算法</li>
+		<li>五、CART 树</li>
+		<li>六、连续值、缺失值处理</li>
+		<li>七、多变量决策树</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/5_knn.html" target="_blank">5.knn</a>
+	<ul>
+		<li>一、k 近邻算法</li>
+		<li>二、 kd树</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/6_ensemble_learning.html" target="_blank">6.集成学习</a>
+	<ul>
+		<li>一、集成学习误差</li>
+		<li>二、 Boosting</li>
+		<li>三、Bagging</li>
+		<li>四、集成策略</li>
+		<li>五、多样性分析</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/7_GBT.html" target="_blank">7.梯度提升树</a>
+	<ul>
+		<li>一、提升树</li>
+		<li>二、xgboost</li>
+		<li>三、LightGBM</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/8_feature_selection.html" target="_blank">8.特征工程</a>
+	<ul>
+		<li>一、缺失值处理</li>
+		<li>二、特征编码</li>
+		<li>三、数据标准化、正则化</li>
+		<li>四、特征选择</li>
+		<li>五、稀疏表示和字典学习</li>
+		<li>六、多类分类问题</li>
+		<li>七、类别不平衡问题</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/9_model_selection.html" target="_blank">9.模型评估</a>
+	<ul>
+		<li>一、泛化能力</li>
+		<li>二、过拟合、欠拟合</li>
+		<li>三、偏差方差分解</li>
+		<li>四、参数估计准则</li>
+		<li>五、泛化能力评估</li>
+		<li>六、训练集、验证集、测试集</li>
+		<li>七、性能度量</li>
+		<li>七、超参数调节</li>
+		<li>八、传统机器学习的挑战</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/10_PCA.html" target="_blank">10.降维</a>
+	<ul>
+		<li>一、维度灾难</li>
+		<li>二、主成分分析 PCA</li>
+		<li>三、核化线性降维 KPCA</li>
+		<li>四、流形学习</li>
+		<li>五、度量学习</li>
+		<li>六、概率PCA</li>
+		<li>七、独立成分分析</li>
+		<li>八、t-SNE</li>
+		<li>九、LargeVis</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/11_cluster.html" target="_blank">11.聚类</a>
+	<ul>
+		<li>一、性能度量</li>
+		<li>二、原型聚类</li>
+		<li>三、密度聚类</li>
+		<li>四、层次聚类</li>
+		<li>五、谱聚类</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/12_semi_supervised.html" target="_blank">12.半监督学习</a>
+	<ul>
+		<li>半监督学习</li>
+		<li>一、生成式半监督学习方法</li>
+		<li>二、半监督 SVM</li>
+		<li>三、图半监督学习</li>
+		<li>四、基于分歧的方法</li>
+		<li>五、半监督聚类</li>
+		<li>六、 总结</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/13_EM.html" target="_blank">13.EM算法</a>
+	<ul>
+		<li>一、示例</li>
+		<li>二、EM算法原理</li>
+		<li>三、EM算法与高斯混合模型</li>
+		<li>四、EM 算法与 kmeans 模型</li>
+		<li>五、EM 算法的推广</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/14_maxent.html" target="_blank">14.最大熵算法</a>
+	<ul>
+		<li>一、最大熵模型MEM</li>
+		<li>二、分类任务最大熵模型</li>
+		<li>三、最大熵的学习</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/15_HMM.html" target="_blank">15.隐马尔可夫模型</a>
+	<ul>
+		<li>一、隐马尔可夫模型HMM</li>
+		<li>二、 HMM 基本问题</li>
+		<li>三、 最大熵马尔科夫模型MEMM</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/16_CRF.html" target="_blank">16.概率图与条件随机场</a>
+	<ul>
+		<li>一、概率图模型</li>
+		<li>二、贝叶斯网络</li>
+		<li>三、马尔可夫随机场</li>
+		<li>四、条件随机场 CRF</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/17_prob_infer.html" target="_blank">17.边际概率推断</a>
+	<ul>
+		<li>一、精确推断</li>
+		<li>二、近似推断</li>
+	</ul>
+</li>
+<li><a href="统计学习/chapters/18_topic_model.html" target="_blank">18.主题模型</a>
+	<ul>
+		<li>一、Unigram Model</li>
+		<li>二、pLSA Model</li>
+		<li>三、LDA Model</li>
+		<li>四、LDA优化</li>
+		<li>五、sentence-LDA</li>
+		<li>六、模型讨论</li>
+	</ul>
+</li>
+</ul>
+<h2>深度学习</h2>
+<ul>
+<li><a href="深度学习/chapters/0_dl_introduction.html" target="_blank">0.深度学习简介</a>
+	<ul>
+		<li>一、 介绍</li>
+		<li>二、历史</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/1_deep_forward.html" target="_blank">1.深度前馈神经网络</a>
+	<ul>
+		<li>一、基础</li>
+		<li>二、损失函数</li>
+		<li>三、输出单元</li>
+		<li>四、隐单元</li>
+		<li>五、结构设计</li>
+		<li>六、历史小记</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/2_bp.html" target="_blank">2.反向传播算法</a>
+	<ul>
+		<li>一、链式法则</li>
+		<li>二、反向传播</li>
+		<li>三、算法实现</li>
+		<li>四、自动微分</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/3_regularization.html" target="_blank">3.正则化</a>
+	<ul>
+		<li>一、参数范数正则化</li>
+		<li>二、显式约束正则化</li>
+		<li>三、数据集增强</li>
+		<li>四、噪声鲁棒性</li>
+		<li>五、早停</li>
+		<li>六、参数相对约束</li>
+		<li>七、dropout</li>
+		<li>八、对抗训练</li>
+		<li>九、正切传播算法</li>
+		<li>十、其它相关</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/4_optimization.html" target="_blank">4.最优化基础</a>
+	<ul>
+		<li>一、代价函数</li>
+		<li>二、神经网络最优化挑战</li>
+		<li>三、 mini-batch</li>
+		<li>四、基本优化算法</li>
+		<li>五、自适应学习率算法</li>
+		<li>六、二阶近似方法</li>
+		<li>七、共轭梯度法</li>
+		<li>八、优化策略和元算法</li>
+		<li>九、参数初始化策略</li>
+		<li>十、Normalization</li>
+		<li>十一、Online Learning</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/5_CNN.html" target="_blank">5.卷积神经网络</a>
+	<ul>
+		<li>一、卷积运算</li>
+		<li>二、卷积层、池化层</li>
+		<li>三、基本卷积的变体</li>
+		<li>四、应用</li>
+		<li>五、 历史和现状</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/5_CNN_1_classfication.html" target="_blank">5.1.CNN之图片分类</a>
+	<ul>
+		<li>一、LeNet</li>
+		<li>二、AlexNet</li>
+		<li>三、VGG-Net</li>
+		<li>四、Inception</li>
+		<li>五、ResNet</li>
+		<li>六、ResNet 变种</li>
+		<li>七、SENet</li>
+		<li>八、 DenseNet</li>
+		<li>九、小型网络</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/6_RNN.html" target="_blank">6.循环神经网络</a>
+	<ul>
+		<li>一、RNN计算图</li>
+		<li>二、训练算法</li>
+		<li>三、长期依赖</li>
+		<li>四、常见 RNN 变种</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/7_Transformer.html" target="_blank">7.Transformer</a>
+	<ul>
+		<li>一、Transformer</li>
+		<li>二、Universal Transformer</li>
+		<li>三、Transformer XL</li>
+		<li>四、GPT</li>
+		<li>五、BERT</li>
+		<li>六、ERNIE</li>
+		<li>七、XLNet</li>
+		<li>八、MT-DNN</li>
+		<li>九、BERT 扩展</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/8_word_representation.html" target="_blank">8.词向量</a>
+	<ul>
+		<li>一、向量空间模型 VSM</li>
+		<li>二、LSA</li>
+		<li>三、Word2Vec</li>
+		<li>四、GloVe</li>
+		<li>五、FastText</li>
+		<li>六、ELMo</li>
+		<li>七、变种</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/9_ctr_prediction1.html" target="_blank">9.传统 CTR 预估模型</a>
+	<ul>
+		<li>一、LR 模型</li>
+		<li>二、POLY2 模型</li>
+		<li>三、FM模型</li>
+		<li>四、FFM模型</li>
+		<li>五、GBDT-LR 模型</li>
+		<li>六、FTRL模型</li>
+		<li>七、LS-PLM 模型</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/9_ctr_prediction2.html" target="_blank">10.神经网络 CTR 预估模型</a>
+	<ul>
+		<li>一、DSSM</li>
+		<li>二、FNN</li>
+		<li>三、PNN</li>
+		<li>四、DeepCrossing</li>
+		<li>五、Wide&Deep</li>
+		<li>六、DCN</li>
+		<li>七、DeepFM</li>
+		<li>八、NFM</li>
+		<li>九、AFM</li>
+		<li>十、xDeepFM</li>
+		<li>十一、ESMM</li>
+		<li>十二、DIN</li>
+		<li>十三、DIEN</li>
+		<li>十四、DSIN</li>
+		<li>十五、DICM</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/10_graph_embedding.html" target="_blank">11.Graph Embedding</a>
+	<ul>
+		<li>一、DeepWalk</li>
+		<li>二、LINE</li>
+		<li>三、GraRep</li>
+		<li>四、TADW</li>
+		<li>五、DNGR</li>
+		<li>六、Node2Vec</li>
+		<li>七、WALKLETS</li>
+		<li>八、SDNE</li>
+		<li>九、CANE</li>
+		<li>十、EOE</li>
+		<li>十一、metapath2vec</li>
+		<li>十二、GraphGAN</li>
+		<li>十三、struc2vec</li>
+		<li>十四、GraphWave</li>
+		<li>十五、NetMF</li>
+		<li>十六、NetSMF</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/10_graph_embedding2.html" target="_blank">12.Graph Embedding(续)</a>
+	<ul>
+		<li>十七、PTE</li>
+		<li>十八、HNE</li>
+		<li>十九、AANE</li>
+		<li>二十、LANE</li>
+		<li>二十一、MVE</li>
+		<li>二十二、PMNE</li>
+		<li>二十三、ANRL</li>
+		<li>二十四、DANE</li>
+		<li>二十五、HERec</li>
+		<li>二十六、GATNE</li>
+		<li>二十七、MNE</li>
+		<li>二十八、MVN2VEC</li>
+		<li>二十九、SNE</li>
+		<li>三十、ProNE</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/11_GNN.html" target="_blank">13.图神经网络</a>
+	<ul>
+		<li>一、GNN</li>
+		<li>二、GCN</li>
+		<li>三、Fast Localized GCN</li>
+		<li>四、Semi-Supervised GCN</li>
+		<li>五、分子指纹GCN</li>
+		<li>六、GGS-NN</li>
+		<li>七、PATCHY-SAN</li>
+		<li>八、GraphSage</li>
+		<li>九、GAT</li>
+		<li>十、R-GCN</li>
+		<li>十一、 AGCN</li>
+		<li>十二、FastGCN</li>
+		<li>十三、PinSage</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/11_GNN2.html" target="_blank">14.图神经网络(续)</a>
+	<ul>
+		<li>十四、GCMC</li>
+		<li>十五、JK-Net</li>
+		<li>十六、PPNP</li>
+		<li>十七、VRGCN</li>
+		<li>十八、ClusterGCN</li>
+		<li>十九、LDS-GNN</li>
+		<li>二十、DIAL-GNN</li>
+		<li>二十一、HAN</li>
+		<li>二十二、HetGNN</li>
+		<li>二十三、NGCF</li>
+		<li>二十四、HGT</li>
+		<li>二十五、GPT-GNN</li>
+		<li>二十六、Geom-GCN</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/11_GNN3.html" target="_blank">15.图神经网络(综述及其它)</a>
+	<ul>
+		<li>一、A Comprehensive Survey of Graph Embedding</li>
+		<li>二、Graph Embedding Techniques, Applications, and Performance</li>
+		<li>三、Representation Learning on Graphs</li>
+		<li>四、Deeper Insights into GCN</li>
+		<li>五、Deep Learning On Graph</li>
+		<li>六、Graph Network</li>
+		<li>七、GNN : A Review</li>
+		<li>八、A Comprehensive Survey On GNN</li>
+		<li>九、GNNEXPLAINER</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/11_GNN4.html" target="_blank">16.图神经网络(综述续)</a>
+	<ul>
+		<li>一、GIN</li>
+		<li>二、GCN 自监督学习</li>
+		<li>三、GNN 公平比较</li>
+		<li>四、GNN 评估陷阱</li>
+		<li>五、AGL</li>
+		<li>六、AliGraph</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/12_classic_rec_system.html" target="_blank">17.传统推荐算法</a>
+	<ul>
+		<li>一、Tapestry</li>
+		<li>二、GroupLens</li>
+		<li>三、ItemBased CF</li>
+		<li>四、Amazon I-2-I CF</li>
+		<li>五、Slope One Rating-Based CF</li>
+		<li>六、Bipartite Network Projection</li>
+		<li>七、Implicit Feedback CF</li>
+		<li>八、PMF</li>
+		<li>九、SVD++</li>
+		<li>十、MMMF 扩展</li>
+		<li>十一、OCCF</li>
+		<li>十二、BPR</li>
+	</ul>
+</li>
+<li><a href="深度学习/chapters/13_practical.html" target="_blank">18.工程实践指导原则</a>
+	<ul>
+		<li>一、性能度量</li>
+		<li>二、默认的基准模型</li>
+		<li>三、决定是否收集更多数据</li>
+		<li>四、选择超参数</li>
+		<li>五、调试策略</li>
+		<li>六、示例：数字识别系统</li>
+		<li>七、数据预处理</li>
+		<li>八、变量初始化</li>
+		<li>九、结构设计</li>
+	</ul>
+</li>
+</ul>
+<h2>工具</h2>
+<h3>CRF</h3>
+<ul>
+<li><a href="工具/CRF/chapters/crfpp.html" target="_blank">CRF++</a>
+	<ul>
+		<li>一、安装</li>
+		<li>二、使用</li>
+		<li>三、Python接口</li>
+		<li>四、常见错误</li>
+	</ul>
+</li>
+</ul>
+<h3>lightgbm</h3>
+<ul>
+<li><a href="工具/lightgbm/chapters/lightgbm_usage.html" target="_blank">lightgbm使用指南</a>
+	<ul>
+		<li>一、安装</li>
+		<li>二、调参</li>
+		<li>三、进阶</li>
+		<li>四、API</li>
+		<li>五、Docker</li>
+	</ul>
+</li>
+</ul>
+<h3>xgboost</h3>
+<ul>
+<li><a href="工具/xgboost/chapters/xgboost_usage.html" target="_blank">xgboost使用指南</a>
+	<ul>
+		<li>一、安装</li>
+		<li>二、调参</li>
+		<li>三、外存计算</li>
+		<li>四、 GPU计算</li>
+		<li>五、单调约束</li>
+		<li>六、 DART booster</li>
+		<li>七、Python API</li>
+	</ul>
+</li>
+</ul>
+<h3>scikit-learn</h3>
+<ul>
+<li><a href="工具/scikit-learn/chapters/1.preprocess.html" target="_blank">1.预处理</a>
+	<ul>
+		<li>一、特征处理</li>
+		<li>二、特征选择</li>
+		<li>三、字典学习</li>
+		<li>四、PipeLine</li>
+	</ul>
+</li>
+<li><a href="工具/scikit-learn/chapters/2.dimension_reduce.html" target="_blank">2.降维</a>
+	<ul>
+		<li>一、PCA</li>
+		<li>二、MDS</li>
+		<li>三、Isomap</li>
+		<li>四、LocallyLinearEmbedding</li>
+		<li>五、FA</li>
+		<li>六、FastICA</li>
+		<li>七、t-SNE</li>
+	</ul>
+</li>
+<li><a href="工具/scikit-learn/chapters/3.supervised_model.html" target="_blank">3.监督学习模型</a>
+	<ul>
+		<li>一、线性模型</li>
+		<li>二、支持向量机</li>
+		<li>三、贝叶斯模型</li>
+		<li>四、决策树</li>
+		<li>五、KNN</li>
+		<li>六 、AdaBoost</li>
+		<li>七、梯度提升树</li>
+		<li>八、Random Forest</li>
+	</ul>
+</li>
+<li><a href="工具/scikit-learn/chapters/4.model_select.html" target="_blank">4.模型评估</a>
+	<ul>
+		<li>一、数据集切分</li>
+		<li>二、性能度量</li>
+		<li>三、验证曲线 && 学习曲线</li>
+		<li>四、超参数优化</li>
+	</ul>
+</li>
+<li><a href="工具/scikit-learn/chapters/5.cluster.html" target="_blank">5.聚类模型</a>
+	<ul>
+		<li>一、KMeans</li>
+		<li>二、DBSCAN</li>
+		<li>三、MeanShift</li>
+		<li>四、AgglomerativeClustering</li>
+		<li>五、BIRCH</li>
+		<li>六、GaussianMixture</li>
+		<li>七、SpectralClustering</li>
+	</ul>
+</li>
+<li><a href="工具/scikit-learn/chapters/6.semi_supervised.html" target="_blank">6.半监督学习模型</a>
+	<ul>
+		<li>一、标签传播算法</li>
+	</ul>
+</li>
+<li><a href="工具/scikit-learn/chapters/7.HMM.html" target="_blank">7.隐马尔可夫模型</a>
+	<ul>
+		<li>一、Hmmlearn</li>
+		<li>二、seqlearn</li>
+	</ul>
+</li>
+</ul>
+<h3>spark</h3>
+<ul>
+<li><a href="工具/spark/chapters/01_basic.html" target="_blank">1.基础概念</a>
+	<ul>
+		<li>一、核心概念</li>
+		<li>二、安装和使用</li>
+		<li>三、 pyspark shell</li>
+		<li>四、独立应用</li>
+	</ul>
+</li>
+<li><a href="工具/spark/chapters/02_rdd.html" target="_blank">2.rdd使用</a>
+	<ul>
+		<li>一、概述</li>
+		<li>二、创建 RDD</li>
+		<li>三、转换操作</li>
+		<li>四、行动操作</li>
+		<li>五、其他方法和属性</li>
+		<li>六、持久化</li>
+		<li>七、分区</li>
+		<li>八、混洗</li>
+	</ul>
+</li>
+<li><a href="工具/spark/chapters/03_dataframe.html" target="_blank">3.dataframe使用</a>
+	<ul>
+		<li>一、概述</li>
+		<li>二、SparkSession</li>
+		<li>三、DataFrame 创建</li>
+		<li>四、 DataFrame 保存</li>
+		<li>五、DataFrame</li>
+		<li>六、Row</li>
+		<li>七、Column</li>
+		<li>八、GroupedData</li>
+		<li>九、functions</li>
+	</ul>
+</li>
+<li><a href="工具/spark/chapters/04_acc_broadcast.html" target="_blank">4.累加器和广播变量</a>
+	<ul>
+		<li>一、累加器</li>
+		<li>二、广播变量</li>
+	</ul>
+</li>
+</ul>
+<h3>numpy</h3>
+<ul>
+<li><a href="工具/numpy/chapters/numpy.html" target="_blank">numpy 使用指南</a>
+	<ul>
+		<li>一、 ndarray</li>
+		<li>二、 ufunc 函数</li>
+		<li>三、 函数库</li>
+		<li>四、数组的存储和加载</li>
+	</ul>
+</li>
+</ul>
+<h3>scipy</h3>
+<ul>
+<li><a href="工具/scipy/chapters/scipy.html" target="_blank">scipy 使用指南</a>
+	<ul>
+		<li>一、 常数和特殊函数</li>
+		<li>二、 拟合与优化</li>
+		<li>三、线性代数</li>
+		<li>四、 统计</li>
+		<li>五、数值积分</li>
+		<li>六、 稀疏矩阵</li>
+	</ul>
+</li>
+</ul>
+<h3>matplotlib</h3>
+<ul>
+<li><a href="工具/matplotlib/chapters/matplotlib.html" target="_blank">matplotlib 使用指南</a>
+	<ul>
+		<li>一、matplotlib配置</li>
+		<li>二、 matplotlib Artist</li>
+		<li>三、基本概念</li>
+		<li>四、布局</li>
+		<li>五、  Path</li>
+		<li>六、 path effect</li>
+		<li>七、坐标变换</li>
+		<li>八、 3D 绘图</li>
+		<li>九、技巧</li>
+	</ul>
+</li>
+</ul>
+<h3>pandas</h3>
+<ul>
+<li><a href="工具/pandas/chapters/pandas.html" target="_blank">pandas 使用指南</a>
+	<ul>
+		<li>一、基本数据结构</li>
+		<li>二、 内部数据结构</li>
+		<li>三、 下标存取</li>
+		<li>四、 运算</li>
+		<li>五、变换</li>
+		<li>六、数据清洗</li>
+		<li>七、 字符串操作</li>
+		<li>八、 聚合与分组</li>
+		<li>九、时间序列</li>
+		<li>十、 DataFrame 绘图</li>
+		<li>十一、 移动窗口函数</li>
+		<li>十二、 数据加载和保存</li>
+	</ul>
+</li>
+</ul>
+
+        </body>
+        </html>
+        
